@@ -34,16 +34,10 @@ h6 {
 /* Header */
 /* Header */
 header {
-  color: white;
-  color: #fff;
-  height: 80vh;
-  background-color: #ff525d;
-  background-color: linear-gradient(337deg, #ff525d 0%, #ff7a85 80%);
-  background-color: -webkit-linear-gradient(337deg, #ff525d 0%, #ff7a85 80%);
-  background-color: -moz-linear-gradient(337deg, #ff525d 0%, #ff7a85 80%);
-  background-image: url(../img/bg-pattern-intro-mobile.svg);
-  background-position: 50% 50%;
-  background-size: 343%;
+  height: 60vh;
+  background-image: url(/images/Header.jpg);
+  background-position: 0 0;
+  background-size: 100%;
   background-repeat: no-repeat;
   border-radius: 0px 0px 0px 82px;
   -webkit-border-radius: 0px 0px 0px 82px;
@@ -235,28 +229,3 @@ footer {
     position: static;
     width: 50%;
   }
-  #sota h2 {
-    padding-top: 10vh;
-  }
-  #sota img {
-    transform: scale(100%) translateY(-9%);
-  }
-  #design-bis{
-    text-align: left;
-  }
-  #design {
-    display: flex;
-  }
-  #design-bis img {
-    content: url(../img/illustration-laptop-desktop.svg);
-    width: 200%;
-    transform: translate(-45%, -15%);
-  }
-  #menu-footer {
-    display: flex;
-    justify-content: space-around;
-  }
-  #logo-footer {
-    padding: 0;
-  }
-}
