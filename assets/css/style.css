@@ -26,7 +26,7 @@ input {
 /*!!!!!!!!!! Header !!!!!!!!!!*/
 header {
   height: 50vh;
-  background-image: url(/images/Header.jpg);
+  background-image: url(/assets/img/Header.jpg);
   background-position: 0 0;
   background-size: 100%;
   background-repeat: no-repeat;
