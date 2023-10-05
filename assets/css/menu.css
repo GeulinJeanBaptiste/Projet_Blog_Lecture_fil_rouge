@@ -1,74 +1,86 @@
 #menu ul {
   list-style-type: none;
 }
+
 #menu {
   width: var(--docwidth);
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: auto;
-  padding: 4rem 0;
+  padding: 0 0 0 0;
   text-align: center;
 }
+
 #check {
   display: none;
 }
-#check:checked ~ #inner-menu {
+
+#check:checked~#inner-menu {
   display: flex;
   flex-direction: column;
   width: var(--docwidth);
   margin: auto;
 }
-#check:checked ~ label > img {
+
+#check:checked~label>img {
   content: url(/assets/img/icon-close.svg);
 }
+
 #inner-menu {
   position: absolute;
-  top: 150px;
+  top: 80px;
   color: black;
   display: none;
   text-align: center;
   border-radius: 15px;
   padding: 1rem;
-  background-color: white;
+  background-color: #b89c77fd;
   box-shadow: -1px 10px 5px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: -1px 10px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -1px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
+
 #inner-menu ul,
 #inner-menu li {
-  font-family: "Ubuntu", sans-serif;
   font-weight: 900;
-  /* margin: 0.5rem; */
 }
+
 #inner-menu li {
   padding: 0.5rem;
   top: 0;
 }
+
 #inner-menu ul {
   border-radius: 10px;
   transition: all 500ms;
 }
+
 .submen {
-  background-color: #eeeeee;
+  background-color: #b89c77fd;
 }
+
 #inner-menu span {
   display: inline-block;
   width: 20px;
 }
+
 .hide {
   max-height: 0;
   overflow: hidden;
   padding: 0;
 }
+
 .show {
   max-height: 500px;
   padding: 0.5rem;
 }
+
 @media screen and (min-width: 576px) {
   #menu label {
     display: none;
   }
+
   #inner-menu {
     color: #ffffff;
     position: static;
@@ -77,27 +89,32 @@
     box-shadow: none;
     width: 100%;
   }
+
   #menubtn1,
   #menubtn2,
   #menubtn3 {
     position: relative;
   }
+
   #inner-menu ul {
-    /* display: none; */
     position: absolute;
     top: 1.5rem;
     left: 0;
     color: black;
   }
+
   #navbtn {
     margin-left: auto;
   }
+
   #menubtn1 ul {
     left: -25px;
   }
+
   #menubtn2 ul {
     left: -2px;
   }
+
   #menubtn3 ul {
     left: -19px;
   }
